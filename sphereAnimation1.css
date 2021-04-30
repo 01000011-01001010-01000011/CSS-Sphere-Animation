@@ -1,0 +1,190 @@
+@keyframes rotateSphere1{
+    5%{
+        background: radial-gradient(circle at 70% 10%, #dededf, #2d2dfa 25%, #2000ad 80%, #0d014e 95%);
+    }
+
+    10%{
+        background: radial-gradient(circle at 65% 14%, #e4e4e6, #2d2dfa 25%, #2000ad 80%, #0d014e 95%);
+    }
+
+    15%{
+        background: radial-gradient(circle at 60% 16%, #dededf, #2d2dfa 25%, #2000ad 80%, #0d014e 95%);
+    }
+
+    20%{
+        background: radial-gradient(circle at 55% 18%, #dededf, #2d2dfa 25%, #2000ad 80%, #0d014e 95%);
+    }
+
+    25%{
+        background: radial-gradient(circle at 50% 20%, #dededf, #2d2dfa 25%, #2000ad 80%, #0d014e 95%);
+    }
+
+    30%{
+        background: radial-gradient(circle at 45% 22%, #dededf, #2d2dfa 25%, #2000ad 80%, #0d014e 95%);
+    }
+
+    35%{
+        background: radial-gradient(circle at 40% 24%, #dededf, #2d2dfa 25%, #1c0097 80%, #0d014e 95%);
+    }
+
+    40%{         
+        background: radial-gradient(circle at 35% 26%, #dededf, #2d2dfa 25%, #1c0097 80%, #0d014e 95%);
+    }
+
+    45%{
+        background: radial-gradient(circle at 30% 28%, #c3c3c5, #1616fa 25%, #1c0097 80%, #0d014e 95%);
+    }
+
+    50%{
+        background: radial-gradient(circle at 25% 30%, #c3c3c5, #0404f5 25%, #1c0097 80%, #0d014e 95%);
+    }
+
+    55%{
+        background: radial-gradient(circle at 20% 32%, #c3c3c5, #0101ec 25%, #1c0097 80%, #0d014e 95%);
+    }
+    
+    60%{
+        background: radial-gradient(circle at 15% 34%, #cacacc, #0101db 25%, #1c0097 80%, #0d014e 95%);
+    }
+
+    65%{
+        background: radial-gradient(circle at 10% 36%, #c6c6c7, #0202df 25%, #1c0097 80%, #0d014e 95%);
+    }
+
+    70%{
+        background: radial-gradient(circle at 5% 36%, #4b4bfd, #0101ca 25%, #1c0097 80%, #0d014e 95%);
+    }    
+    
+    75%{
+        background: radial-gradient(circle at 0% 38%, #3535f8, #0202c2 25%, #1c0097 80%, #0d014e 95%);
+    }
+    
+    
+    /* RETURN TO START COLOURING */
+
+    
+    80%{
+        background: radial-gradient(); /* circle at 110% 6%, #a7a7fd, #2d2dfa 25%, #2000ad 80%, #0d014e 95%);*/
+    }
+    
+    85%{
+        background: radial-gradient(); /*circle at 100% 7%, #a7a7fd, #2d2dfa 25%, #2000ad 80%, #0d014e 95%);*/
+    }
+
+    
+    90%{
+        background: radial-gradient(circle at 95% 8%, #6262ff, #1c1cfa 25%, #2000ad 80%, #0d014e 95%);
+    }
+    
+   95%{
+        background: radial-gradient(circle at 80% 9%, #3a3afd, #0505e2 25%, #1e029b 80%, #0d014e 95%);
+    }
+   
+    100%{
+        background: radial-gradient(circle at 70% 10%, #2727fd, #020283 25%, #1e029b 80%, #0d014e 95%);
+
+    }
+    
+
+}
+
+@keyframes transitionLightingLeft{
+
+    0%{
+        box-shadow: 0.35vw 0.35vw 1.5vw white;
+        /*transition: box-shadow ease-in;*/
+    }
+
+    20%{
+        box-shadow: 0.3vw 0.3vw 1.25vw white;
+        /*transition: box-shadow ease-out;*/
+    }
+
+    40%{
+        box-shadow: 0.25vw 0.25vw 1vw white;
+    }
+
+    60%{
+        box-shadow: 0.25vw 0.25vw 0.75vw white;
+    }
+
+    80%{
+        box-shadow: 0.2vw 0.2vw 0.5vw white;
+    }
+
+    100%{
+
+        box-shadow: 0.2vw 0.2vw 0.5vw white;
+        /*transition: box-shadow ease-in;*/
+    }
+
+}
+
+@keyframes rotateShadow1{
+
+    25%{
+        background: radial-gradient(circle at 50% 50%, rgba(17, 17, 17, 0.4), rgba(0, 0, 0, 0.1) 40%, rgb(167, 164, 164) 50%);
+    }
+
+    50%{
+        background: radial-gradient(circle at 50% 50%, rgba(27, 27, 27, 0.4), rgba(0, 0, 0, 0.1) 40%,  rgb(167, 164, 164) 50%);
+
+    }
+    
+    75%{
+        background: radial-gradient(circle at 50% 50%, rgba(15, 15, 15, 0.4), rgba(0, 0, 0, 0.1) 40%, rgb(167, 164, 164) 50%);
+    }
+}
+
+.sphere1{
+    position: absolute;
+    width: 25%;
+    height: 60%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 60% 30%, #dededf, #2d2dfa 25%, #2000ad 80%, #0d014e 95%);
+    
+    transform-style: preserve-3d;
+    
+    margin: 0.5% 0 0 7%;
+
+    z-index: 1;
+
+}
+
+
+.sphere1:hover{
+    animation: rotateSphere1 1.5s linear infinite;
+}  
+
+.shadow1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    transform: rotateX(75deg); 
+    margin-top: 50vh;
+    z-index: -1;   
+}
+
+.sphere1:hover .shadow1{
+    animation: rotateShadow1 1s linear infinite;
+}
+
+
+.lightingLeft{   
+    position: absolute;
+    width: 25%; 
+    height: 60%;
+    border-radius: 50%;
+    box-shadow: 0.2vw 0.2vw 0.25vw rgb(252, 252, 252);
+   
+    margin: 0.5% 0 0 7%;
+
+    z-index: 0;
+  
+}
+
+.stageLeft:hover .lightingLeft{    
+    animation: transitionLightingLeft 1.5s linear infinite;
+}
+

@@ -1,0 +1,26 @@
+body{         
+    width: 80vw;
+    height: 80vh;
+    
+    background-color: rgb(167, 164, 164);
+}
+
+.stage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%; 
+
+    margin: 5% 0 0 12%;
+     
+}
+
+.stageLeft, .stageRight{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+}
